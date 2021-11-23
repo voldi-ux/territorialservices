@@ -748,9 +748,24 @@ h1 {
 .why h1 {
   color: #fff !important;
 }
+.why-container p {
+  width: 100%;
+}
+.why-container img {
+  max-width: 300px;
+  width: 100%;
+}
+
 .why-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+  grid-template-columns: repeat(3,1fr);
+  
+}
+@media(max-width:780px) {
+  .why-container {
+    display: flex;
+    flex-direction: column;
+  }
   
 }
 .projects {
