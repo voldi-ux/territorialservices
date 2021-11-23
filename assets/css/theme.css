@@ -651,9 +651,13 @@ h1 {
   color: #fff;
   text-transform: capitalize;
   background: rgb(47, 140, 219);
-  /* background: linear-gradient(90deg, rgba(47, 140, 219, 1) 0%, rgba(9, 79, 121, 1) 60%, rgba(9, 75, 121, 0.8827906162464986) 100%); */
   background: rgb(87, 172, 245);
   background: linear-gradient(90deg, rgba(87, 172, 245, 1) 0%, rgba(50, 171, 244, 1) 60%, rgba(46, 166, 249, 0.9332107843137255) 100%);
+}
+@media(max-width:570px) {
+  .estimate {
+    flex-direction: column;
+  }
 }
 
 .estimate button, .button {
