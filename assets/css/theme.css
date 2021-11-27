@@ -12,6 +12,10 @@
   --grey: #6e807a;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
   line-height: 1.5;
@@ -550,7 +554,8 @@ h1 {
 }
 
 .service {
-  width: 250px;
+  width: 200px;
+  margin: 0 1rem;
 }
 
 .service:nth-child(even) {
@@ -573,15 +578,25 @@ h1 {
   display: flex;
   margin: 4rem 0;
 }
+
+
+
 .services-container .service {
   position: relative !important;
+}
+
+.owl-container .service {
+  position: relative !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .service-content {
   background-image: url("../img/bubble.png");
   background-size: cover;
-  min-height: 150px;
-  min-width: 150px;
+  height: 150px;
+  width: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -592,13 +607,37 @@ h1 {
 .service-content h5 {
   font-size: 1rem !important;
 }
+.owl-container {
+  display: none !important;
+} 
 
 @media (max-width: 780px) {
-  .services {
+  .owl-container {
+    display: block !important;
+  }
+  .services-container.hide {
     display: none;
   }
+  .services-container {
+    display: block;
+  }
+  .service img {
+  display: block;
+  width: 150px !important;
+}
+
+.service-content {
+    height: 100px;
+  width: 100px;
+}
 }
 .services-container .service-content {
+  position: absolute;
+  top: 0;
+}
+
+
+.owl-container .service-content {
   position: absolute;
   top: 0;
 }
@@ -675,6 +714,7 @@ h1 {
   color: #fff !important;
 }
 .card-service {
+  text-decoration: none;
   display: inline-flex;
   flex-direction: row;
   align-items: center;
@@ -687,6 +727,11 @@ h1 {
   border-radius: 4px;
   box-shadow: 0 2px 6px rgba(154, 159, 151, 0.2);
   background-color: #fff;
+  color: #006ba1;
+}
+.card-service:hover {
+  text-decoration: none;
+ 
 }
 
 .card-service p {

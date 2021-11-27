@@ -1,21 +1,20 @@
 
 $('document').ready(function() {
-  $('#doctorSlideshow').owlCarousel({
-    nav: true,
-    dots: false,
-    navText: ["<span class='mai-arrow-back'></span>", "<span class='mai-arrow-forward'></span>"],
+  $(".owl-carousel").owlCarousel({
+    center: true,
+    items: 2,
+    loop: true,
+    margin: 30,
     responsive: {
-      0: {
-        items: 1
+      780: {
+        items: 1,
       },
-      576: {
-        items: 2
-      },
-      992: {
-        items: 3
-      }
-    }
+    },
   });
+});
+
+$(".myCarousel").carousel({
+  interval:1000
 });
 
 $('document').ready(function() {
