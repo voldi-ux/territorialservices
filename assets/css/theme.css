@@ -111,6 +111,10 @@ a:hover {
   background: linear-gradient(90deg, rgba(87, 172, 245, 1) 0%, rgba(50, 171, 244, 1) 60%, rgba(46, 166, 249, 0.9332107843137255) 100%);
 }
 
+.topbar .container, .navbar .container {
+  max-width: 1368px;
+}
+
 .topbar .row {
   align-items: center;
   min-height: 36px;
