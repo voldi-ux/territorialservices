@@ -666,6 +666,10 @@ h1 {
   color: #03334b;
 }
 
+ul {
+  list-style: none;
+}
+
 .list li {
   margin: 1rem 0;
   display: flex;
